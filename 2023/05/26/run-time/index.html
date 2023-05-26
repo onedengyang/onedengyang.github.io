@@ -19,27 +19,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.16.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="static and&#x2F;or dynamic program analysis静态程序分析是指在不运行程序的情况下对程序进行分析。这种方法通常涉及对程序源代码的分，以查找潜在的错误、漏洞和性能问题。静态程序分析可以通过使用静态分析工具来实现，这些工具可以自动扫描代码并检测潜在的问题。静态程序分析的优点是可以在早期发现问题，从而减少后期修复问题的成本。但是，静态程序分析可能会产生误报，因为">
+    <meta name="description" content="run-time 系列论文笔记Can method data dependencies support the assessment of traceability between requirements and source code?2015年 SEP form 2012 ICSM的扩展版 创新点1 提出了代码中不仅有调用依赖还有数据依赖 (方法之间的)2 提出了一个获取方法调用和数据依赖的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="知识盲区">
-<meta property="og:url" content="http://example.com/2023/05/06/%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/index.html">
+<meta property="og:title" content="run-time">
+<meta property="og:url" content="http://example.com/2023/05/26/run-time/index.html">
 <meta property="og:site_name" content="Deng Yang&#39;s HomePage">
-<meta property="og:description" content="static and&#x2F;or dynamic program analysis静态程序分析是指在不运行程序的情况下对程序进行分析。这种方法通常涉及对程序源代码的分，以查找潜在的错误、漏洞和性能问题。静态程序分析可以通过使用静态分析工具来实现，这些工具可以自动扫描代码并检测潜在的问题。静态程序分析的优点是可以在早期发现问题，从而减少后期修复问题的成本。但是，静态程序分析可能会产生误报，因为">
+<meta property="og:description" content="run-time 系列论文笔记Can method data dependencies support the assessment of traceability between requirements and source code?2015年 SEP form 2012 ICSM的扩展版 创新点1 提出了代码中不仅有调用依赖还有数据依赖 (方法之间的)2 提出了一个获取方法调用和数据依赖的">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-06T13:46:58.000Z">
-<meta property="article:modified_time" content="2023-05-26T09:06:57.008Z">
+<meta property="og:image" content="http://example.com/.com//call%20dependencies.png">
+<meta property="og:image" content="http://example.com/.com//BP3%7DD40Y%5B2B95964%7B_FXIM1.png">
+<meta property="article:published_time" content="2023-05-26T10:04:42.000Z">
+<meta property="article:modified_time" content="2023-05-26T10:14:17.716Z">
 <meta property="article:author" content="Deng Yang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/.com//call%20dependencies.png">
 
 
-<link rel="canonical" href="http://example.com/2023/05/06/%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">
+<link rel="canonical" href="http://example.com/2023/05/26/run-time/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/05/06/%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/","path":"2023/05/06/知识盲区/","title":"知识盲区"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/05/26/run-time/","path":"2023/05/26/run-time/","title":"run-time"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>知识盲区 | Deng Yang's HomePage</title>
+<title>run-time | Deng Yang's HomePage</title>
   
 
 
@@ -86,7 +89,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-主页"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>主页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-论文笔记"><a href="/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/" rel="section"><i class="fa fa-archive fa-fw"></i>论文笔记</a></li><li class="menu-item menu-item-简历"><a href="/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" rel="section"><i class="fa fa-home fa-fw"></i>简历</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-主页"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>主页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-论文笔记"><a href="/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/" rel="section"><i class="fa fa-archive fa-fw"></i>论文笔记</a></li><li class="menu-item menu-item-简历"><a href="/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" rel="section"><i class="fa fa-home fa-fw"></i>简历</a></li><li class="menu-item menu-item-软件工程小知识"><a href="/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B0%8F%E7%9F%A5%E8%AF%86" rel="section"><i class="fa fa-archive fa-fw"></i>软件工程小知识</a></li><li class="menu-item menu-item-好词好句"><a href="/%E5%A5%BD%E8%AF%8D%E5%A5%BD%E5%8F%A5" rel="section"><i class="fa fa-archive fa-fw"></i>好词好句</a></li>
   </ul>
 </nav>
 
@@ -98,7 +101,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -111,6 +114,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#run-time-%E7%B3%BB%E5%88%97%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">run-time 系列论文笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Can-method-data-dependencies-support-the-assessment-of-traceability-between-requirements-and-source-code"><span class="nav-number">1.1.</span> <span class="nav-text">Can method data dependencies support the assessment of traceability between requirements and source code?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E6%96%B0%E7%82%B9"><span class="nav-number">1.1.1.</span> <span class="nav-text">创新点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%80%BC%E5%BE%97%E5%8F%82%E8%80%83%E7%9A%84%E8%A7%82%E7%82%B9"><span class="nav-number">1.1.2.</span> <span class="nav-text">值得参考的观点</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -123,7 +127,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -159,7 +163,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/06/%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/26/run-time/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -172,12 +176,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="知识盲区 | Deng Yang's HomePage">
+      <meta itemprop="name" content="run-time | Deng Yang's HomePage">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          知识盲区
+          run-time
         </h1>
 
         <div class="post-meta-container">
@@ -187,15 +191,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2023-05-06 21:46:58" itemprop="dateCreated datePublished" datetime="2023-05-06T21:46:58+08:00">2023-05-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-05-26 17:06:57" itemprop="dateModified" datetime="2023-05-26T17:06:57+08:00">2023-05-26</time>
+      <time title="创建时间：2023-05-26 18:04:42 / 修改时间：18:14:17" itemprop="dateCreated datePublished" datetime="2023-05-26T18:04:42+08:00">2023-05-26</time>
     </span>
 
   
@@ -207,9 +205,23 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><ol>
-<li><strong>static and&#x2F;or dynamic program analysis</strong><br><strong>静态程序分析</strong>是指在不运行程序的情况下对程序进行分析。这种方法通常涉及对程序源代码的分，以查找潜在的错误、漏洞和性能问题。静态程序分析可以通过使用静态分析工具来实现，这些工具可以自动扫描代码并检测潜在的问题。静态程序分析的优点是可以在早期发现问题，从而减少后期修复问题的成本。但是，静态程序分析可能会产生误报，因为它无法考虑程序的实际运行情况。<br><strong>动态程序分析</strong>是指在运行程序时对程序进行分析。这种方法通常涉及对程序的执行进行跟踪和监视，以查找潜在的错误漏洞和性能问题。动态程序分析可以通过使用调试器、性能分析器和代码覆盖工具来实现。动态程序析的优点是可以考虑程序的实际运行情况，从而更准确地检测问题。但是，动态程序分析可能会影响程序的性能，并且可能无法检测到所有问题</li>
+    <div class="post-body" itemprop="articleBody"><h1 id="run-time-系列论文笔记"><a href="#run-time-系列论文笔记" class="headerlink" title="run-time 系列论文笔记"></a>run-time 系列论文笔记</h1><h2 id="Can-method-data-dependencies-support-the-assessment-of-traceability-between-requirements-and-source-code"><a href="#Can-method-data-dependencies-support-the-assessment-of-traceability-between-requirements-and-source-code" class="headerlink" title="Can method data dependencies support the assessment of traceability between requirements and source code?"></a>Can method data dependencies support the assessment of traceability between requirements and source code?</h2><p>2015年 SEP form 2012 ICSM的扩展版</p>
+<h3 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h3><p>1 提出了代码中不仅有调用依赖还有数据依赖 (方法之间的)<br>2 提出了一个获取方法调用和数据依赖的集成工具</p>
+<p>调用依赖：如下面的例子，init方法调用了List Frame方法。</p>
+<p><img src="/.com//call%20dependencies.png" alt="方法之间调用关系例子"></p>
+<p>数据依赖：方法之间存在读取或操纵（manipulate）相同的数据，比如下图中，ListFrame和inti方法中都访问了ser字段并且存在调用关系。ListFrame和buttonControl3_actionPerformed也访问了字段ser。因此，文章中认为ser和server是指向内存中相同的数据。因此，三种方法都存在着数据依赖关系。</p>
+<p>列子：<br>R2和R5为方法。</p>
+<ol>
+<li>ListFrame.buttonControl3_actionPerformed() has a ‘trace’ to R2 and a ‘no-trace’ to R5</li>
+<li>需要评估ListFrame.buttonControl3_actionPerformed() 被 ListFrameListener3.actionPerformed() 调用，并且它自己调用 ServerReq.getmovie()。</li>
+<li>由下表可知，ListFrameListener3.actionPerformed()和ServerReq.getmovie()都和R2 R5有trace关系，</li>
+<li>因此我们认为ListFrame.buttonControl3_actionPerformed()也可以trace到R2或者R5。</li>
+<li>但是对于R2,四种方法中有三种都追朔到了R2，仅有两种TRACE到了R5，因此认为对R2有关系对R5没有trace关系。</li>
 </ol>
+<p>Code Dependency Graph (CDGraph):通过图的形式建立方法召回和数据依赖.</p>
+<p>使用工具:<br>VMTI (Java Virtual Machine Tool Interface)<br>JNI (Java Native Interface) 记录实时的数据依赖<br><strong>(这个地方卡住了)</strong></p>
+<p><img src="/.com//BP3%7DD40Y%5B2B95964%7B_FXIM1.png" alt="方法之间调用关系例子"></p>
+<h3 id="值得参考的观点"><a href="#值得参考的观点" class="headerlink" title="值得参考的观点"></a>值得参考的观点</h3><p>1 制品的变更会导致可追溯链接很容易过时<br>Traceability links easily get outdated once the specification and the implementation evolve, making it necessary to constantly assess and update traceability links in order to ensure the required completeness and correctness。<br>2 对于一些大型项目，自动化跟踪链接是很有吸引力的<br>Given the large number of trace links in a project, and the cost and effort of assessment, it is appealing to consider techniques for performing that task automatically.</p>
 
     </div>
 
@@ -252,11 +264,14 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/05/06/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3CSDN/" rel="prev" title="将博客搬至CSDN">
-                  <i class="fa fa-chevron-left"></i> 将博客搬至CSDN
+                <a href="/2023/05/18/index/" rel="prev" title="index">
+                  <i class="fa fa-chevron-left"></i> index
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2023/05/26/error/" rel="next" title="error">
+                  error <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
