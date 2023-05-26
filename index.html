@@ -123,6 +123,10 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
   <div class="links-of-author animated">
@@ -184,7 +188,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-05-26 18:10:46 / 修改时间：18:11:01" itemprop="dateCreated datePublished" datetime="2023-05-26T18:10:46+08:00">2023-05-26</time>
+      <time title="创建时间：2023-05-26 18:10:46 / 修改时间：18:18:26" itemprop="dateCreated datePublished" datetime="2023-05-26T18:10:46+08:00">2023-05-26</time>
     </span>
 
   
@@ -258,7 +262,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-05-26 18:04:42 / 修改时间：18:14:17" itemprop="dateCreated datePublished" datetime="2023-05-26T18:04:42+08:00">2023-05-26</time>
+      <time title="创建时间：2023-05-26 18:04:42 / 修改时间：20:11:52" itemprop="dateCreated datePublished" datetime="2023-05-26T18:04:42+08:00">2023-05-26</time>
     </span>
 
   
@@ -274,7 +278,7 @@
           <h1 id="run-time-系列论文笔记"><a href="#run-time-系列论文笔记" class="headerlink" title="run-time 系列论文笔记"></a>run-time 系列论文笔记</h1><h2 id="Can-method-data-dependencies-support-the-assessment-of-traceability-between-requirements-and-source-code"><a href="#Can-method-data-dependencies-support-the-assessment-of-traceability-between-requirements-and-source-code" class="headerlink" title="Can method data dependencies support the assessment of traceability between requirements and source code?"></a>Can method data dependencies support the assessment of traceability between requirements and source code?</h2><p>2015年 SEP form 2012 ICSM的扩展版</p>
 <h3 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h3><p>1 提出了代码中不仅有调用依赖还有数据依赖 (方法之间的)<br>2 提出了一个获取方法调用和数据依赖的集成工具</p>
 <p>调用依赖：如下面的例子，init方法调用了List Frame方法。</p>
-<p><img src="/.com//call%20dependencies.png" alt="方法之间调用关系例子"></p>
+<p><img src="/2023/05/26/run-time/call%20dependencies.png" alt="方法之间调用关系例子"></p>
 <p>数据依赖：方法之间存在读取或操纵（manipulate）相同的数据，比如下图中，ListFrame和inti方法中都访问了ser字段并且存在调用关系。ListFrame和buttonControl3_actionPerformed也访问了字段ser。因此，文章中认为ser和server是指向内存中相同的数据。因此，三种方法都存在着数据依赖关系。</p>
 <p>列子：<br>R2和R5为方法。</p>
 <ol>
@@ -286,7 +290,7 @@
 </ol>
 <p>Code Dependency Graph (CDGraph):通过图的形式建立方法召回和数据依赖.</p>
 <p>使用工具:<br>VMTI (Java Virtual Machine Tool Interface)<br>JNI (Java Native Interface) 记录实时的数据依赖<br><strong>(这个地方卡住了)</strong></p>
-<p><img src="/.com//BP3%7DD40Y%5B2B95964%7B_FXIM1.png" alt="方法之间调用关系例子"></p>
+<p><img src="/2023/05/26/run-time/BP3%7DD40Y%5B2B95964%7B_FXIM1.png" alt="方法之间调用关系例子"></p>
 <h3 id="值得参考的观点"><a href="#值得参考的观点" class="headerlink" title="值得参考的观点"></a>值得参考的观点</h3><p>1 制品的变更会导致可追溯链接很容易过时<br>Traceability links easily get outdated once the specification and the implementation evolve, making it necessary to constantly assess and update traceability links in order to ensure the required completeness and correctness。<br>2 对于一些大型项目，自动化跟踪链接是很有吸引力的<br>Given the large number of trace links in a project, and the cost and effort of assessment, it is appealing to consider techniques for performing that task automatically.</p>
 
       
@@ -350,7 +354,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-05-26 18:12:38" itemprop="dateModified" datetime="2023-05-26T18:12:38+08:00">2023-05-26</time>
+      <time title="修改时间：2023-05-26 20:12:52" itemprop="dateModified" datetime="2023-05-26T20:12:52+08:00">2023-05-26</time>
     </span>
 
   
@@ -364,16 +368,17 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="观点随记"><a href="#观点随记" class="headerlink" title="观点随记"></a>观点随记</h1><p>A hybrid machine learning modelof depression estimation in home-based olderadults: a 7-year follow-up study</p>
-<p><img src="/.com//image-20230518170810968.png" alt="image-20230518174036456"></p>
+<img src="/2023/05/18/index/image-20230518170810968.png">
+
 <p>采用的混合机器学习模型：DL+传统机器学习</p>
 <hr>
-<p><img src="/.com//image-20230518170831109.png" alt="image-20230518174036456"></p>
+<p><img src="/2023/05/18/index/image-20230518170831109.png" alt="image-20230518174036456"></p>
 <p>提出了一种新的特征选择方法，将样本筛选和模型构建有机融合。即序列前向选择思路。简单来说，按照变量的重要性大小，逐个纳入预测因素，当新纳入的变量能提升性能时，则纳入，否则剔除。另外，本文对于术前和术后因素，是分开进行特征选择的。</p>
 <p>原文截图：</p>
-<p><img src="/.com//image-20230518170841499.png" alt="image-20230518174036456"></p>
+<p><img src="/2023/05/18/index/image-20230518170841499.png" alt="image-20230518174036456"></p>
 <hr>
 <p>特征选择的图，可作参考：</p>
-<p><img src="/.com//image-20230518170915135.png" alt="image-20230518174036456"></p>
+<p><img src="/2023/05/18/index/image-20230518170915135.png" alt="image-20230518174036456"></p>
 
       
     </div>
