@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yang Deng | Academic Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #2c3e50;
+    }
+    header {
+      background: #002147;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .profile img {
+      border-radius: 8px;
+      width: 160px;
+      height: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-top: 3rem;
+      color: #002147;
+    }
+    .paper {
+      margin-bottom: 1.2rem;
+    }
+    a {
+      color: #0066cc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .awards ul, .education ul, .interests ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yang Deng</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#interests">Research Interests</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="profile">
+      <img src="your-photo.png" alt="Yang Deng Photo">
+      <div>
+        <h2>About Me</h2>
+        <p><strong>Ph.D. Student at School of Computer Science, Wuhan University</strong></p>
+        <p>Email: <a href="mailto:dd0028y@163.com">dd0028y@163.com</a>
+          <p>Hello! I'm <strong>Yang Deng</strong>, I am currently a Ph.D. student in the <a href="https://cs.whu.edu.cn/">School of Computer Science at Wuhan University</a>. I joined the <a href="https://cstar.whu.edu.cn/">CSTAR Lab</a> (Collaborative Software Testing and Analysis Research Group) in Fall 2024, advised by <a href="https://jifeng-xuan.github.io/">Prof. Jifeng Xuan</a>. My research interests include <strong>software traceability, software analysis, and natural language processing</strong>.</p>
+          <p><a href="/blog">Visit my blog</a> for musings on code, research, and caffeinated thoughts. Or <a href="/resume.pdf">grab my résumé</a>.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Wuhan University</strong>, Ph.D. in Computer Science, Sep 2025 – Present</li>
+        <li><strong>Wuhan Textile University</strong>, M.S. in Software Engineering, Sep 2022 – Jun 2025</li>
+        <li><strong>Wuhan Textile University</strong>, B.S. in Information and Computing Science, Sep 2018 – Jul 2022</li>
+      </ul>
+    </section>
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Software Traceability Link Recovery</li>
+        <li>open source software ecosystem</li>
+        <!-- <li>Large Language Models for Software Engineering</li>
+        <li>Natural Language Processing</li> -->
+      </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <div class="paper">
+          Yang Deng, Bangchao Wang*, Qiang Zhu, Junping Liu, Jiewen Kuang, Xingfu Li. <br>
+          <strong>MTLink: Adaptive multi-task learning based pre-trained language model for traceability link recovery between issues and commits</strong>. <br>
+          <em>Journal of King Saud University - Computer and Information Sciences</em>, Vol. 36, No. 2, 2024. DOI: <a href="https://doi.org/10.1016/j.jksuci.2024.101958">10.1016/j.jksuci.2024.101958</a>
+        </div>
+        <div class="paper">
+          Yang Deng, Bangchao Wang*, Zhiyuan Zou, Luyao Ye. <br>
+          <strong>PromptLink: Multi-template prompt learning with adversarial training for issue-commit link recovery</strong>. <br>
+          In <em>Proceedings of the 18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM '24)</em>, ACM, pp. 461–467, 2024.
+        </div>
+        <div class="paper">
+          Bangchao Wang, Yang Deng, Ruiqi Luo*, Peng Liang, Tingting Bi. <br>
+          <strong>MPLinker: Multi-template Prompt-tuning with adversarial training for issue-commit Link recovery</strong>. <br>
+          <em>The Journal of Systems & Software</em>, Vol. 223, 2025. (JCR Q2, SCI; CCF 软件工程 B 类期刊)
+        </div>
+        <div class="paper">
+          Yang Deng, Bangchao Wang*, Zhongyuan Hua, Yong Xiao, Xingfu Li. <br>
+          <strong>A Knowledge Graph Construction Method for Software Project Based on CAJP</strong>. <br>
+          <em>Journal of Internet Technology</em>, Vol. 24, No. 6, pp. 1229–1239, 2023.
+        </div>
+        <div class="paper">
+          Bangchao Wang, Yang Deng, Hongyan Wan*, Xingfu Li. <br>
+          <strong>DF4RT: Deep Forest for Requirements Traceability Recovery Between Use Cases and Source Code</strong>. <br>
+          In <em>Proceedings of the 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC)</em>, pp. 617–622, 2023.
+        </div>
+        <div class="paper">
+          Bangchao Wang, Yang Deng, Peng Ye*, Xinrong Hu, Qiang Zhu. <br>
+          <strong>Teaching reform and practice of software engineering graduate students by implanting scientific research literacy into classroom teaching content</strong>. <br>
+          <em>Computer Education</em>, Issue 12, pp. 37–47, 2024. (CEISEE 2023 Best Paper Award)
+        </div>
+        <div class="paper">
+          Bangchao Wang, Yang Deng, Ruiqi Luo*, Huan Jin. <br>
+          <strong>An Empirical Study on Source Code Feature Extraction in Preprocessing of IR-Based Requirements Traceability</strong>. <br>
+          In <em>Proceedings of the 22nd International Conference on Software Quality, Reliability and Security (QRS)</em>, pp. 1069–1078, 2022.
+        </div>
+      </section>
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>National Scholarship, Ministry of Education, China, 2024</li>
+        <li>Academic Excellence Scholarship (Top 10%), Wuhan Textile University, 2022 & 2023</li>
+        <li>Outstanding Graduate Student, Wuhan Textile University, 2023</li>
+        <li>Shuwei Cup Mathematical Modeling – Second Prize, 2023</li>
+        <li>Teddy Cup Data Mining Contest – Provincial Third Prize, 2021</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:dd0028y@163.com">dd0028y@163.com</a></p>
+      <!-- <p>Tel: +86 173-5448-1924</p> -->
+    </section>
+  </div>
+</body>
+</html>
